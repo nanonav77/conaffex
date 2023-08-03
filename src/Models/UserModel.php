@@ -50,7 +50,7 @@ class UserModel extends ConnectionDB {
     final public static function setEstado(int $estado){ self::$estado = $estado;}
     final public static function setIDToken(string $IDToken){   self::$IDToken = $IDToken;}    
 
-     /**************************Consultar usuario según nombre de usuario**************************************/
+     /**************************Obtener toda la lista de usuarios**************************************/
     final public static function getUsers()
     {
         try {
