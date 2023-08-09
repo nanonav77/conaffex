@@ -1,5 +1,29 @@
-[02-Aug-2023 18:05:35 America/Costa_Rica] conexion exitosa
-[02-Aug-2023 18:08:12 America/Costa_Rica] conexion exitosa
-[02-Aug-2023 18:10:21 America/Costa_Rica] conexion exitosa
-[02-Aug-2023 21:27:53 America/Costa_Rica] conexion exitosa
-[02-Aug-2023 21:32:51 America/Costa_Rica] conexion exitosa
+[08-Aug-2023 22:43:15 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[08-Aug-2023 22:43:15 America/Costa_Rica] conexion exitosa
+[08-Aug-2023 22:43:15 America/Costa_Rica] ColaboradorModel::updateSave -> PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Models\ColaboradorModel.php:161
+Stack trace:
+#0 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Models\ColaboradorModel.php(161): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\ColaboradorController.php(130): App\Models\ColaboradorModel::updateSave()
+#2 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Routes\col.php(17): App\Controllers\ColaboradorController->updateSave('col/update/')
+#3 C:\xampp\htdocs\API_BACKEND_CONAFFEX\public\index.php(26): require('C:\\xampp\\htdocs...')
+#4 {main}
+[08-Aug-2023 22:44:51 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[08-Aug-2023 22:44:51 America/Costa_Rica] conexion exitosa
+[08-Aug-2023 22:44:51 America/Costa_Rica] ColaboradorModel::updateSave -> PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Models\ColaboradorModel.php:162
+Stack trace:
+#0 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Models\ColaboradorModel.php(162): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\ColaboradorController.php(130): App\Models\ColaboradorModel::updateSave()
+#2 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Routes\col.php(17): App\Controllers\ColaboradorController->updateSave('col/update/')
+#3 C:\xampp\htdocs\API_BACKEND_CONAFFEX\public\index.php(26): require('C:\\xampp\\htdocs...')
+#4 {main}
+[08-Aug-2023 22:45:05 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[08-Aug-2023 22:45:05 America/Costa_Rica] conexion exitosa
+[08-Aug-2023 22:45:05 America/Costa_Rica] ColaboradorModel::updateSave -> PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Models\ColaboradorModel.php:162
+Stack trace:
+#0 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Models\ColaboradorModel.php(162): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\ColaboradorController.php(130): App\Models\ColaboradorModel::updateSave()
+#2 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Routes\col.php(17): App\Controllers\ColaboradorController->updateSave('col/update/')
+#3 C:\xampp\htdocs\API_BACKEND_CONAFFEX\public\index.php(26): require('C:\\xampp\\htdocs...')
+#4 {main}
+[08-Aug-2023 22:46:10 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[08-Aug-2023 22:46:10 America/Costa_Rica] conexion exitosa

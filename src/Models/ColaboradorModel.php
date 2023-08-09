@@ -104,9 +104,9 @@ class ColaboradorModel extends ConnectionDB {
     {
         try {
             $con = self::getConnection();
-            $query = $con->prepare("SELECT * FROM colaborador_fex WHERE NUMERO LIKE '%:filtro%' OR NOMBRE LIKE '%:filtro%'");
+            $query = $con->prepare("SELECT * FROM colaborador_fex WHERE NUMERO LIKE :filtro OR NOMBRE LIKE :filtro");
             $query->execute([
-                ':filtro' => $valorFiltro
+                ':filtro' =>  "%".$valorFiltro."%"
             ]);
 
             if ($query->rowCount() == 0) {
@@ -117,7 +117,7 @@ class ColaboradorModel extends ConnectionDB {
             }          
         } catch (\PDOException $e) {
             error_log("ColaboradorModel::getFilter -> ".$e);
-            die(json_encode(ResponseHttp::status500('No se pueden obtener los datos del usuario')));
+            die(json_encode(ResponseHttp::status500('No se pueden obtener los datos del colaborador')));
         }
     }
 
@@ -156,6 +156,7 @@ class ColaboradorModel extends ConnectionDB {
                ':nombre'         => self::getNombre(),
                ':identificacion' => self::getIdentificacion(),
                ':tarjeta'        => self::getTarjeta(),
+               ':telefono'       => self::getTelefono(),
                ':observaciones'  => self::getObservaciones(),                    
                ':tipo'           => self::getTipo(),
                ':genero'         => self::getGenero()
