@@ -50,7 +50,7 @@ class ColaboradorModel extends ConnectionDB {
     final public static function setTipo(string $tipo){ self::$tipo = $tipo;}
     final public static function setGenero(string $genero){   self::$genero = $genero;}    
 
-     /**************************Obtener toda la lista de colaboradores**************************************/
+    /**************************Obtener toda la lista de colaboradores**************************************/
     final public static function getAll()
     {
         try {
@@ -60,7 +60,7 @@ class ColaboradorModel extends ConnectionDB {
             $rs['data'] = $query->fetchAll(\PDO::FETCH_ASSOC);
             return $rs;
         } catch (\PDOException $e) {
-            error_log("ColaboradorModel::getColaboradores -> ".$e);
+            error_log("ColaboradorModel::getAll -> ".$e);
             die(json_encode(ResponseHttp::status500('No se pueden obtener los datos')));
         }
     }
@@ -139,7 +139,7 @@ class ColaboradorModel extends ConnectionDB {
             }          
         } catch (\PDOException $e) {
             error_log("ColaboradorModel::getOne -> ".$e);
-            die(json_encode(ResponseHttp::status500('No se pueden obtener los datos del usuario')));
+            die(json_encode(ResponseHttp::status500('No se pueden obtener los datos del colaborador')));
         }
     }
 

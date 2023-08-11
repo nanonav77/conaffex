@@ -27,3 +27,113 @@ Stack trace:
 #4 {main}
 [08-Aug-2023 22:46:10 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
 [08-Aug-2023 22:46:10 America/Costa_Rica] conexion exitosa
+[10-Aug-2023 22:58:54 America/Costa_Rica] conexion exitosa
+[10-Aug-2023 22:59:15 America/Costa_Rica] conexion exitosa
+[10-Aug-2023 22:59:20 America/Costa_Rica] conexion exitosa
+[10-Aug-2023 22:59:27 America/Costa_Rica] conexion exitosa
+[10-Aug-2023 22:59:41 America/Costa_Rica] conexion exitosa
+[10-Aug-2023 22:59:54 America/Costa_Rica] conexion exitosa
+[10-Aug-2023 23:01:01 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:01:29 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:01:44 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:01:48 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:02:01 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:02:01 America/Costa_Rica] conexion exitosa
+[10-Aug-2023 23:02:01 America/Costa_Rica] conexion exitosa
+[10-Aug-2023 23:02:09 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:02:37 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:03:47 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:03:47 America/Costa_Rica] PHP Fatal error:  Uncaught Rakit\Validation\RuleNotFoundException: Validator 'float' is not registered in C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php:103
+Stack trace:
+#0 [internal function]: Rakit\Validation\Validator->__invoke('float')
+#1 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(494): call_user_func_array(Object(Rakit\Validation\Validator), Array)
+#2 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(71): Rakit\Validation\Validation->resolveRules(Array)
+#3 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(58): Rakit\Validation\Validation->addAttribute('tamano', 'required|float|...')
+#4 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php(83): Rakit\Validation\Validation->__construct(Object(Rakit\Validation\Validator), Array, 'required|float|...', Array)
+#5 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php(67): Rakit\Validation\Validator->make(Array, Array, Array)
+#6 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\FincaController.php(30): Rakit\Validation\Validator->validate(Array, Array)
+#7 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Routes\finca.php(13): App\Controllers\FincaController->postSave('finca/')
+#8 C:\xampp\htdocs\API_BACKEND_CONAFFEX\public\index.php(26): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php on line 103
+[10-Aug-2023 23:04:00 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:04:00 America/Costa_Rica] PHP Fatal error:  Uncaught Rakit\Validation\RuleNotFoundException: Validator 'decimal' is not registered in C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php:103
+Stack trace:
+#0 [internal function]: Rakit\Validation\Validator->__invoke('decimal')
+#1 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(494): call_user_func_array(Object(Rakit\Validation\Validator), Array)
+#2 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(71): Rakit\Validation\Validation->resolveRules(Array)
+#3 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(58): Rakit\Validation\Validation->addAttribute('tamano', 'required|decima...')
+#4 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php(83): Rakit\Validation\Validation->__construct(Object(Rakit\Validation\Validator), Array, 'required|decima...', Array)
+#5 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php(67): Rakit\Validation\Validator->make(Array, Array, Array)
+#6 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\FincaController.php(30): Rakit\Validation\Validator->validate(Array, Array)
+#7 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Routes\finca.php(13): App\Controllers\FincaController->postSave('finca/')
+#8 C:\xampp\htdocs\API_BACKEND_CONAFFEX\public\index.php(26): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php on line 103
+[10-Aug-2023 23:04:05 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:04:05 America/Costa_Rica] PHP Fatal error:  Uncaught Rakit\Validation\RuleNotFoundException: Validator 'decimal' is not registered in C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php:103
+Stack trace:
+#0 [internal function]: Rakit\Validation\Validator->__invoke('decimal')
+#1 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(494): call_user_func_array(Object(Rakit\Validation\Validator), Array)
+#2 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(71): Rakit\Validation\Validation->resolveRules(Array)
+#3 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(58): Rakit\Validation\Validation->addAttribute('tamano', 'required|decima...')
+#4 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php(83): Rakit\Validation\Validation->__construct(Object(Rakit\Validation\Validator), Array, 'required|decima...', Array)
+#5 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php(67): Rakit\Validation\Validator->make(Array, Array, Array)
+#6 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\FincaController.php(30): Rakit\Validation\Validator->validate(Array, Array)
+#7 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Routes\finca.php(13): App\Controllers\FincaController->postSave('finca/')
+#8 C:\xampp\htdocs\API_BACKEND_CONAFFEX\public\index.php(26): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php on line 103
+[10-Aug-2023 23:04:16 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:04:16 America/Costa_Rica] PHP Fatal error:  Uncaught Rakit\Validation\RuleNotFoundException: Validator 'decimal' is not registered in C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php:103
+Stack trace:
+#0 [internal function]: Rakit\Validation\Validator->__invoke('decimal')
+#1 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(494): call_user_func_array(Object(Rakit\Validation\Validator), Array)
+#2 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(71): Rakit\Validation\Validation->resolveRules(Array)
+#3 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(58): Rakit\Validation\Validation->addAttribute('tamano', 'required|decima...')
+#4 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php(83): Rakit\Validation\Validation->__construct(Object(Rakit\Validation\Validator), Array, 'required|decima...', Array)
+#5 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php(67): Rakit\Validation\Validator->make(Array, Array, Array)
+#6 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\FincaController.php(30): Rakit\Validation\Validator->validate(Array, Array)
+#7 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Routes\finca.php(13): App\Controllers\FincaController->postSave('finca/')
+#8 C:\xampp\htdocs\API_BACKEND_CONAFFEX\public\index.php(26): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php on line 103
+[10-Aug-2023 23:05:34 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:05:34 America/Costa_Rica] PHP Fatal error:  Uncaught Rakit\Validation\RuleNotFoundException: Validator 'float' is not registered in C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php:103
+Stack trace:
+#0 [internal function]: Rakit\Validation\Validator->__invoke('float')
+#1 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(494): call_user_func_array(Object(Rakit\Validation\Validator), Array)
+#2 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(71): Rakit\Validation\Validation->resolveRules(Array)
+#3 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(58): Rakit\Validation\Validation->addAttribute('tamano', 'required|float|...')
+#4 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php(83): Rakit\Validation\Validation->__construct(Object(Rakit\Validation\Validator), Array, 'required|float|...', Array)
+#5 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php(67): Rakit\Validation\Validator->make(Array, Array, Array)
+#6 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\FincaController.php(30): Rakit\Validation\Validator->validate(Array, Array)
+#7 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Routes\finca.php(13): App\Controllers\FincaController->postSave('finca/')
+#8 C:\xampp\htdocs\API_BACKEND_CONAFFEX\public\index.php(26): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php on line 103
+[10-Aug-2023 23:05:38 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:05:38 America/Costa_Rica] PHP Fatal error:  Uncaught Rakit\Validation\RuleNotFoundException: Validator 'float' is not registered in C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php:103
+Stack trace:
+#0 [internal function]: Rakit\Validation\Validator->__invoke('float')
+#1 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(494): call_user_func_array(Object(Rakit\Validation\Validator), Array)
+#2 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(71): Rakit\Validation\Validation->resolveRules(Array)
+#3 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validation.php(58): Rakit\Validation\Validation->addAttribute('tamano', 'required|float|...')
+#4 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php(83): Rakit\Validation\Validation->__construct(Object(Rakit\Validation\Validator), Array, 'required|float|...', Array)
+#5 C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php(67): Rakit\Validation\Validator->make(Array, Array, Array)
+#6 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\FincaController.php(30): Rakit\Validation\Validator->validate(Array, Array)
+#7 C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Routes\finca.php(13): App\Controllers\FincaController->postSave('finca/')
+#8 C:\xampp\htdocs\API_BACKEND_CONAFFEX\public\index.php(26): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\API_BACKEND_CONAFFEX\vendor\rakit\validation\src\Validator.php on line 103
+[10-Aug-2023 23:06:04 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:06:08 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:08:23 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:08:23 America/Costa_Rica] conexion exitosa
+[10-Aug-2023 23:08:23 America/Costa_Rica] conexion exitosa
+[10-Aug-2023 23:09:25 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:09:43 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:09:55 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:10:21 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:10:35 America/Costa_Rica] PHP Warning:  Undefined array key "Content-Type" in C:\xampp\htdocs\API_BACKEND_CONAFFEX\src\Controllers\BaseController.php on line 46
+[10-Aug-2023 23:10:35 America/Costa_Rica] conexion exitosa

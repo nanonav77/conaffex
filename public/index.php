@@ -12,7 +12,7 @@ use App\Config\ResponseHttp;
     if (isset($_GET['route'])){
 
         $url = explode('/',$_GET['route']);
-        $lista = ['auth','user','col'];
+        $lista = ['auth','user','col','finca'];
         $file = dirname(__DIR__) . '/src/Routes/' .$url[0]. '.php';
 
         if(!in_array($url[0],$lista)){

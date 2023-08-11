@@ -6,7 +6,7 @@
     /*************Parametros enviados por la URL*******************/
     $params  = explode('/' ,$_GET['route']);
 
-    /*************Instancia del controlador de usuario**************/
+    /*************Instancia del controlador de un colaborador**************/
     $app = new ColaboradorController();
 
     /*************Rutas***************/
